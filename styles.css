@@ -1,0 +1,12 @@
+body::before {
+  content: "";
+  display: block;
+  height: 60px;
+}
+
+.bg-peach {
+  background: linear-gradient(170deg, #f2709c, #ff9472) !important;
+}
+.text-purple {
+  color: #6c63ff !important;
+}
