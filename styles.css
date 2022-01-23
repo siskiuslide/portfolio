@@ -32,14 +32,8 @@ h1 {
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
 }
 
-.stack-options {
-  cursor: pointer;
-}
-.stack-options > h3:hover {
-  color: #4b43e4 !important;
-}
-.opt-active {
-  color: #6c63ff !important;
+.frontend-list-section {
+  top: -0.8vh;
 }
 
 .backend-image {
@@ -49,9 +43,13 @@ hr {
   color: #44883e;
   border: solid 2px #44883e;
 }
+.bg-vlow {
+  background: #ffffff0e;
+}
 .logo-container {
   transition: transform 50ms;
-  height: 30vh;
+  height: 25vh;
+  top: -0.6vh;
 }
 .logo-container > a > img:hover {
   transform: scale(1.02);
@@ -86,8 +84,8 @@ hr {
     z-index: 0;
   }
   .express-icon {
-    left: 48%;
-    top: 26%;
+    left: 47%;
+    top: 31%;
     z-index: 2;
   }
 }
