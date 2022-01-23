@@ -10,3 +10,9 @@ body::before {
 .text-purple {
   color: #6c63ff !important;
 }
+.bg-purple {
+  background: #6c63ff !important;
+}
+.nav-link:hover {
+  color: #6c63ff !important;
+}
