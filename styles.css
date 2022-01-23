@@ -3,6 +3,9 @@ body::before {
   display: block;
   height: 60px;
 }
+h1 {
+  font-size: 60px;
+}
 
 .bg-peach {
   background: linear-gradient(170deg, #f2709c, #ff9472) !important;
@@ -11,8 +14,73 @@ body::before {
   color: #6c63ff !important;
 }
 .bg-purple {
-  background: #6c63ff !important;
+  background: #4b43e4 !important;
+}
+.bg-purple-low {
+  background: #4b43e485;
 }
 .nav-link:hover {
   color: #6c63ff !important;
+}
+
+.landing-title {
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+.stack-options {
+  cursor: pointer;
+}
+.stack-options > h3:hover {
+  color: #4b43e4 !important;
+}
+
+.backend-image {
+  width: 40% !important;
+}
+.logo-container {
+  transition: transform 50ms;
+  height: 30vh;
+}
+.logo-container > a > img:hover {
+  transform: scale(1.02);
+}
+
+.node-icon {
+  width: 25% !important;
+}
+.mongo-icon {
+  width: 35% !important;
+}
+.jwt-icon {
+  width: 20% !important;
+}
+.express-icon {
+  width: 30% !important;
+}
+@media screen and (min-width: 1200px) {
+  .node-icon {
+    left: 5%;
+    top: 25%;
+    z-index: 1;
+  }
+  .mongo-icon {
+    left: 22%;
+    top: 57%;
+    z-index: 3;
+  }
+  .jwt-icon {
+    left: 29%;
+    top: 9%;
+    z-index: 0;
+  }
+  .express-icon {
+    left: 48%;
+    top: 26%;
+    z-index: 2;
+  }
 }
