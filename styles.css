@@ -38,9 +38,16 @@ h1 {
 .stack-options > h3:hover {
   color: #4b43e4 !important;
 }
+.opt-active {
+  color: #6c63ff !important;
+}
 
 .backend-image {
   width: 40% !important;
+}
+hr {
+  color: #44883e;
+  border: solid 2px #44883e;
 }
 .logo-container {
   transition: transform 50ms;
@@ -83,4 +90,34 @@ h1 {
     top: 26%;
     z-index: 2;
   }
+}
+.bg-mongoose {
+  background: #800;
+}
+.bg-express {
+  background: #f0f0f0;
+}
+.bg-mongodb {
+  background: #033b37;
+}
+.bg-nodejs {
+  background: #79b461;
+}
+.bg-jwt {
+  background: linear-gradient(to right, #fb015b, #d63aff, #00b9f1, #00f2e6);
+}
+.bg-html {
+  background: #e55327;
+}
+.bg-css {
+  background: #1b77bc;
+}
+.bg-bootstrap {
+  background: #7952b3;
+}
+.bg-js {
+  background: #f0db4f;
+}
+.bg-react {
+  background: #61dafb;
 }
