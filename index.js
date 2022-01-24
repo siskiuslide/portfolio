@@ -1,12 +1,16 @@
-const moreUpdates = document.querySelector('.moreUpdates')
+const moreUpdatesBtn = document.querySelector('.moreUpdates')
 const updates = document.querySelectorAll('.update')
+const updateContainer = document.querySelector('.updateContainer')
+const updateConnector = document.createElement('div')
+updateConnector.classList.add('updateConnector')
+
 const checkExtended = (updates) =>{
     let returnVal
     updates.some((upd)=>{upd.classList.contains('d-none') ? returnVal = false : returnVal = true })
     return returnVal
 }
 let extended = checkExtended(Array.from(document.querySelectorAll('.update')))
-moreUpdates.addEventListener('click',(e)=>{
+moreUpdatesBtn.addEventListener('click',(e)=>{
     //show the hidden updates
     updates.forEach((update, i) =>{
         if(extended === false){
@@ -26,4 +30,11 @@ moreUpdates.addEventListener('click',(e)=>{
 
    extended = checkExtended(Array.from(document.querySelectorAll('.update')))
    extended === true ? e.target.textContent = 'Less' : e.target.textContent = 'More'
+})
+
+
+updates.forEach((el,i)=>{
+    // if(i == 0 |) {return}
+     el.querySelector('.updateDate').insertAdjacentElement('beforeend', updateConnector )
+     console.log(document.querySelectorAll('.updateConnector'))
 })

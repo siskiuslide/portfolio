@@ -165,17 +165,19 @@
     <section class="py-5 bg-white" id='updates'>
       <div class="container">
         <h1 class="text-dark text-center">Updates</h1>
-        <div class="d-flex flex-column py-5">
+        <div class="updateContainer d-flex flex-column py-5">
           <div class="update d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
               <h4 class="fw-lighter text-white px-2">January</h4>
               <h5 class="fw-lighter h2 text-white px-2">2022</h5>
+              <div class="updateConnector"></div>
             </div>
             <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
               <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1 ">Control app - Users system <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
-              <hr class="hr-dark w-25 mx-3">
-              <p class="text-dark px-3 lead"></p>
+              <hr class="hr-dark w-75 mx-3">
+              <p class="text-dark px-3 lead">Once the basic interactions and navigation was implemented into the application I created new endpoints to handle user data and authentication. The application gained its first real user in January.</p>
             </div>
+            
           </div>
           <div class="update d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
@@ -184,8 +186,8 @@
             </div>
             <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
               <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">Control app - Marketing page <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
-              <hr class="hr-dark w-25 mx-3">
-              <p class="text-dark px-3 lead"></p>
+              <hr class="hr-dark w-75 mx-3">
+              <p class="text-dark px-3 lead">A frontend project to add to my collection which is to promote the Control app that I had been working on for a few months. </p>
               <a href="https://controlhe.netlify.app/" class="text-blueaccent px-3 lead"><p>View the site<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
@@ -196,8 +198,6 @@
             </div>
             <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
               <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">MTA Networking Fundamentals <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <hr class="hr-dark w-25 mx-3">
-              <p class="text-dark px-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, inventore explicabo. Maxime? Aspernatur perspiciatis</p>
               <a href="https://www.credly.com/badges/a723b6a0-416a-414c-8600-45d73eb24871?source=linked_in_profile" class="text-blueaccent px-3 lead"><p>Verification<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
@@ -208,7 +208,7 @@
             </div>
             <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
               <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">Control app - Development begins <span class="bg-success text-white h5 fw-lighter rounded px-2 mx-2">Project</span></h3>
-              <hr class="hr-dark w-25 mx-3">
+              <hr class="hr-dark w-75 mx-3">
               <p class="text-dark px-3 lead">After discovering the qualities of Hubitat Elevation networks, I finally began writing a web application to host locally which would control devices connected to the hub.</p>
             </div>
           </div>
@@ -219,8 +219,6 @@
             </div>
             <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
               <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Coding & Logic <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <hr class="hr-dark w-25 mx-3">
-              <p class="text-dark px-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, inventore explicabo. Maxime? Aspernatur perspiciatis ut quia error tempora magni. Assumenda, quasi ipsum neque dolores minima pariatur!</p>
               <a href="https://www.credly.com/badges/2ec2bd23-36a1-4ad5-8d25-1666b45132c4?source=linked_in_profile" class="text-blueaccent px-3 lead"><p>Verification<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
@@ -231,10 +229,20 @@
             </div>
             <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
               <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Cloud Services <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <hr class="hr-dark w-25 mx-3">
-              <p class="text-dark px-3 lead">I completed the L3 award in Cloud Services. It covered Cloud Models, Services, Strategies, and Disaster Recovery.
               <a href="https://www.credly.com/badges/5a0aed49-d4d9-455c-94e8-7d1c42f8988f?source=linked_in_profile" class="text-blueaccent px-3 lead"><p>Verification<i class="bi-link px-1"></i></p></a>
               </p>
+            </div>
+          </div>
+          <div class="update d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 ">
+            <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2">
+              <h4 class="fw-lighter text-white px-2">September</h4>
+              <!-- <p class="fw-light h1 text-whi-2 p2-3">12</p> -->
+              <h5 class="fw-lighter h2 text-white mx-2 px-3">2020</h5>
+            </div>
+            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
+              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">Started Web Development <span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skills</span></h3>
+              <hr class="hr-dark w-75 mx-3"> 
+              <p class="text-dark px-3 lead">I pursued the journey of learning Web Development, beginning with HTML/CSS and progressing with JavaScript.</p>
             </div>
           </div>
           <div class="update d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 ">
@@ -243,10 +251,10 @@
               <!-- <p class="fw-light h1 text-whi-2 p2-3">12</p> -->
               <h5 class="fw-lighter h2 text-white mx-2 px-3">2020</h5>
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">Started Web Development <span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skills</span></h3>
-              <hr class="hr-dark w-25 mx-3"> 
-              <p class="text-dark px-3 lead">I pursued the journey of learning Web Development, beginning with a basic understanding of HTML/CSS from college. I started with making basic marketing pages and features for fictional organisations and websites before adding some basic functionality with JavaScript</p>
+            <div class="updateContent bg-white rounded d-flex flex-column align-items-start justify-content-start">
+              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">College Sep 2018 - August 2020<span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <!-- <hr class="hr-dark w-75 mx-3">  -->
+              <p class="text-dark px-3 lead"><b>ICT:</b> Distinction | <b>Business Studies:</b> B | <b>Mathematics:</b> C</p>
             </div>
           </div>
           <button class="moreUpdates button mt-4 p-2 text-blueaccent bg-white w-25 mx-auto">More</button>

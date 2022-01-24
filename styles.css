@@ -118,10 +118,21 @@ hr {
   transition: transform 100ms
 }
 
-
-
 .update:hover{
   transform: scale(1.02)
+}
+.updateDate{
+  position: relative;
+}
+
+.updateConnector{
+  position: absolute;
+  display: block;
+  background:#39527f ;
+  width: 5px;
+  height: 120px;
+  top: 100%;
+  bottom: 0;
 }
 
 /*large screens*/
