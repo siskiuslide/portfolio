@@ -16,6 +16,15 @@ h1 {
 .bg-purple {
   background: #4b43e4 !important;
 }
+.bg-darkaccent{
+  background: #3f3d56;
+}
+.bg-blueaccent{
+  background: #39527f;
+}
+.text-blueaccent{
+  color: #39527f;
+}
 .bg-purple-low {
   background: #4b43e485;
 }
@@ -24,12 +33,7 @@ h1 {
 }
 
 .landing-title {
-  color: transparent;
-  background: #666666;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.73);
 }
 
 .frontend-list-section {
@@ -42,6 +46,14 @@ h1 {
 hr {
   color: #44883e;
   border: solid 2px #44883e;
+}
+.hr-blue{
+  color: #3f3d56 !important;
+  border: solid 2px #3f3d56 !important;
+}
+.hr-dark{
+  color: #39527f !important;
+  border: solid 2px #39527f !important;
 }
 .bg-vlow {
   background: #ffffff0e;
@@ -103,6 +115,9 @@ hr {
 }
 .bg-jwt {
   background: linear-gradient(to right, #fb015b, #d63aff, #00b9f1, #00f2e6);
+}
+.bg-json{
+  background: #414141;
 }
 .bg-html {
   background: #e55327;
