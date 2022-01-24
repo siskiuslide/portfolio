@@ -79,28 +79,7 @@ hr {
 .express-icon {
   width: 30% !important;
 }
-@media screen and (min-width: 1200px) {
-  .node-icon {
-    left: 5%;
-    top: 25%;
-    z-index: 1;
-  }
-  .mongo-icon {
-    left: 22%;
-    top: 57%;
-    z-index: 3;
-  }
-  .jwt-icon {
-    left: 29%;
-    top: 9%;
-    z-index: 0;
-  }
-  .express-icon {
-    left: 47%;
-    top: 31%;
-    z-index: 2;
-  }
-}
+
 .bg-mongoose {
   background: #800;
 }
@@ -138,7 +117,62 @@ hr {
 .update{
   transition: transform 100ms
 }
+
+
+
 .update:hover{
   transform: scale(1.02)
 }
 
+/*large screens*/
+@media screen and (min-width: 1200px) {
+  .node-icon {
+    left: 5%;
+    top: 25%;
+    z-index: 1;
+  }
+  .mongo-icon {
+    left: 22%;
+    top: 57%;
+    z-index: 3;
+  }
+  .jwt-icon {
+    left: 29%;
+    top: 9%;
+    z-index: 0;
+  }
+  .express-icon {
+    left: 47%;
+    top: 31%;
+    z-index: 2;
+  }
+  .updateDate{
+    min-width: 20%;
+    max-width: 20%;
+  }
+  .update{
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .updateDate{
+    min-width: 200px;
+  }
+  .update{
+    min-width: 100%;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .updateDate{
+    min-width: 150px;
+  }
+  .update{
+    min-width: 100% ;
+    width: 100% ;
+  }
+  
+}
