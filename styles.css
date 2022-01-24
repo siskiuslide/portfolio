@@ -134,3 +134,11 @@ hr {
 .bg-react {
   background: #61dafb;
 }
+
+.update{
+  transition: transform 100ms
+}
+.update:hover{
+  transform: scale(1.02)
+}
+
