@@ -12,9 +12,23 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/index.js"></script>
     <title>Jake Whatling</title>
+    <style>
+      
+    
+    </style>
   </head>
   <body class="bg-dark">
     <nav class="navbar bg-dark navbar-expand-md navbar-dark py-3 fixed-top">
@@ -26,6 +40,7 @@
             <li class="nav-item"><a href="#technologies" class="nav-link">Technologies</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#updates" class="nav-link">Updates</a></li>
+            <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </div>
@@ -71,11 +86,11 @@
             <div class="jumbotron">
               <h1 class="display-4 text-white">Frontend Technologies</h1>
               <p class="lead my-sm-3">
-                <span class="text-white px-3 py-1 bg-html">HTML</span>
-                <span class="text-white px-3 py-1 bg-css">CSS</span>
-                <span class="text-white px-3 py-1 bg-bootstrap fw-bolder">Bootstrap</span>
-                <span class="text-dark  px-3 py-1 bg-js fw-bold">JS</span>
-                <span class="text-white px-3 py-1 bg-react fw-bolder">React</span>
+                <span class="text-white px-3 py-1 h4 bg-html">HTML</span>
+                <span class="text-white px-3 py-1 h4 bg-css">CSS</span>
+                <span class="text-white px-3 py-1 h4 bg-bootstrap fw-bolder">Bootstrap</span>
+                <span class="text-dark  px-3 py-1 h4 bg-js fw-bold">JS</span>
+                <span class="text-white px-3 py-1 h4 bg-react fw-bolder">React</span>
               </p>
               <hr class="my-4" />
               <div class="d-flex flex-column bg-vlow">
@@ -106,12 +121,12 @@
             <div class="jumbotron">
               <h1 class="display-4">Backend Technologies</h1>
               <p class="lead py-sm-3 my-lg-0 my-md-2">
-                <span class="text-white px-2 py-1 bg-nodejs">Node JS</span>
-                <span class="text-dark  px-2 py-1 bg-express fw-bolder shadow">Express</span>
-                <span class="text-white px-2 py-1 bg-mongodb fw-bolder">MongoDB</span>
-                <span class="text-white px-2 py-1 bg-mongoose fw-bold">Mongoose</span>
-                <span class="text-white px-2 py-1 bg-jwt fw-bolder">JWT</span>
-                <span class="text-white px-2 py-1 bg-json fw-bolder">JSON</span>
+                <span class="text-white px-2 py-1 h4 bg-nodejs">Node JS</span>
+                <span class="text-dark  px-2 py-1 h4 bg-express fw-bolder shadow">Express</span>
+                <span class="text-white px-2 py-1 h4 bg-mongodb fw-bolder">MongoDB</span>
+                <span class="text-white px-2 py-1 h4 bg-mongoose fw-bold">Mongoose</span>
+                <span class="text-white px-2 py-1 h4 bg-jwt fw-bolder">JWT</span>
+                <span class="text-white px-2 py-1 h4 bg-json fw-bolder">JSON</span>
               </p>
               <hr class="my-4" />
               <div class="d-flex flex-column bg-vlow">
@@ -158,115 +173,163 @@
       </div>
     </section>
     <section class="py-5 bg-dark" id='projects'>
-      <div class="container">
-        <h1 class="text-light text-center">Projects</h1>
-      </div>
-    </section>
-    <section class="py-5 bg-white" id='updates'>
-      <div class="container">
-        <h1 class="text-dark text-center">Updates</h1>
-        <div class="updateContainer d-flex flex-column py-5">
-          <div class="update d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3">
-            <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
-              <h4 class="fw-lighter text-white px-2">January</h4>
-              <h5 class="fw-lighter h2 text-white px-2">2022</h5>
-              <div class="updateConnector"></div>
+      <h1 class="text-white text-center">Projects</h1>
+        <div id="projectsCarousel" class="carousel slide py-5" data-ride="carousel">
+          <div class="carousel-inner">            
+            <div class="carousel-item active">
+              <div class="d-flex flex-row justify-content-center">
+                <h1 class="text-white" style="font-family: 'oswald';">Control App</h1>
+                <!-- <img src="./img/lighting2.png" alt="" class="image-fluid"> -->
+              </div>
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1 ">Control app - Users system <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none px-5" href="#projectsCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next text-decoration-none px-5" href="#projectsCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+    </div>
+    </section>
+    <section class="py-5 bg-dark" id='updates'>
+      <div class="container">
+        <h1 class="text-white text-center">Updates</h1>
+        <div class="updateContainer d-flex flex-column py-3">
+
+          <div class="update py-3 d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow">
+            <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
+              <h4 class="fw-lighter text-white px-2">February</h4>
+              <h5 class="fw-lighter h2 text-white px-2">2022</h5>
+            </div>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1 ">Bootstrap<span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skill</span></h3>
               <hr class="hr-dark w-75 mx-3">
-              <p class="text-dark px-3 lead">Once the basic interactions and navigation was implemented into the application I created new endpoints to handle user data and authentication. The application gained its first real user in January.</p>
+              <p class="text-white px-3 lead">I began improving bootstrap knowledge so that I could build static sites more efficiently and consistently.</p>
             </div>
             
           </div>
-          <div class="update d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3">
+          <div class="update py-3 d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
+              <h4 class="fw-lighter text-white px-2">January</h4>
+              <h5 class="fw-lighter h2 text-white px-2">2022</h5>
+            </div>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1 ">Control app - Users system <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
+              <hr class="hr-dark w-75 mx-3">
+              <p class="text-white px-3 lead">Once the basic functionality was implemented into the application I created new endpoints to handle user data and authentication. The application gained its first real user in January.</p>
+            </div>
+            
+          </div>
+          <div class="update py-3 d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow">
+            <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
+            
               <h4 class="fw-lighter text-white px-2">December</h4>
               <h5 class="fw-lighter h2 text-white px-2">2021</h5>
+
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">Control app - Marketing page <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">Control app - Marketing page <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
               <hr class="hr-dark w-75 mx-3">
-              <p class="text-dark px-3 lead">A frontend project to add to my collection which is to promote the Control app that I had been working on for a few months. </p>
-              <a href="https://controlhe.netlify.app/" class="text-blueaccent px-3 lead"><p>View the site<i class="bi-link px-1"></i></p></a>
+              <p class="text-white px-3 lead">A frontend project to add to my collection to promote the Control app. </p>
+              <a href="https://controlhe.netlify.app/" class="text-info px-3 lead"><p class="fw-bolder h5">View the site<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
-          <div class="update d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3">
+          <div class="update py-3 d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
+            
               <h4 class="fw-lighter text-white px-2">November</h4>
               <h5 class="fw-lighter h2 text-white px-2">2021</h5>
+
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">MTA Networking Fundamentals <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <a href="https://www.credly.com/badges/a723b6a0-416a-414c-8600-45d73eb24871?source=linked_in_profile" class="text-blueaccent px-3 lead"><p>Verification<i class="bi-link px-1"></i></p></a>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">MTA Networking Fundamentals <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <a href="https://www.credly.com/badges/a723b6a0-416a-414c-8600-45d73eb24871?source=linked_in_profile" class="text-info px-3 py-2 lead"><p class="fw-bolder h5">Verification<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
-          <div class="update d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3 ">
+          <div class="update py-3 d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
+            
               <h4 class="fw-lighter text-white px-2">September</h4>
               <h5 class="fw-lighter h2 text-white px-2">2021</h5>
+
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">Control app - Development begins <span class="bg-success text-white h5 fw-lighter rounded px-2 mx-2">Project</span></h3>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">Control app - Development begins <span class="bg-success text-white h5 fw-lighter rounded px-2 mx-2">Project</span></h3>
               <hr class="hr-dark w-75 mx-3">
-              <p class="text-dark px-3 lead">After discovering the qualities of Hubitat Elevation networks, I finally began writing a web application to host locally which would control devices connected to the hub.</p>
+              <p class="text-white px-3 lead">After discovering the qualities of Hubitat Elevation networks, I finally began writing a web application to host locally which would control devices connected to the hub.</p>
             </div>
           </div>
-          <div class="update d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 ">
+          <div class="update py-3 d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
+            
               <h4 class="fw-lighter text-white px-2">June</h4>
               <h5 class="fw-lighter h2 text-white px-2">2021</h5>
+
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Coding & Logic <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <a href="https://www.credly.com/badges/2ec2bd23-36a1-4ad5-8d25-1666b45132c4?source=linked_in_profile" class="text-blueaccent px-3 lead"><p>Verification<i class="bi-link px-1"></i></p></a>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Coding & Logic <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <a href="https://www.credly.com/badges/2ec2bd23-36a1-4ad5-8d25-1666b45132c4?source=linked_in_profile" class="text-info px-3 lead"><p class="fw-bolder h5">Verification<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
-          <div class="update d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 ">
+          <div class="update py-3 d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2 ">
+            
               <h4 class="fw-lighter text-white px-2">March</h4>
               <h5 class="fw-lighter h2 text-white px-2">2021</h5>
+
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Cloud Services <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <a href="https://www.credly.com/badges/5a0aed49-d4d9-455c-94e8-7d1c42f8988f?source=linked_in_profile" class="text-blueaccent px-3 lead"><p>Verification<i class="bi-link px-1"></i></p></a>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Cloud Services <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <a href="https://www.credly.com/badges/5a0aed49-d4d9-455c-94e8-7d1c42f8988f?source=linked_in_profile" class="text-info px-3 lead"><p class="fw-bolder h5" >Verification<i class="bi-link px-1"></i></p></a>
               </p>
             </div>
           </div>
-          <div class="update d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 ">
+          <div class="update py-3 d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2">
+            
               <h4 class="fw-lighter text-white px-2">September</h4>
-              <!-- <p class="fw-light h1 text-whi-2 p2-3">12</p> -->
               <h5 class="fw-lighter h2 text-white mx-2 px-3">2020</h5>
+
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-self-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">Started Web Development <span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skills</span></h3>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">Started Web Development <span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skills</span></h3>
               <hr class="hr-dark w-75 mx-3"> 
-              <p class="text-dark px-3 lead">I pursued the journey of learning Web Development, beginning with HTML/CSS and progressing with JavaScript.</p>
+              <p class="text-white px-3 lead">I pursued the journey of learning Web Development, beginning with HTML/CSS and progressing with JavaScript.</p>
             </div>
           </div>
-          <div class="update d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 ">
+          <div class="update py-3 d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
             <div class="updateDate d-flex flex-column align-items-center justify-content-center rounded bg-blueaccent shadow-sm m-2">
               <h4 class="fw-lighter text-white px-2">August</h4>
               <!-- <p class="fw-light h1 text-whi-2 p2-3">12</p> -->
               <h5 class="fw-lighter h2 text-white mx-2 px-3">2020</h5>
             </div>
-            <div class="updateContent bg-white rounded d-flex flex-column align-items-start justify-content-start">
-              <h3 class="text-dark px-3 py-sm-3 py-md-2 py-lg-1">College Sep 2018 - August 2020<span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+            <div class="updateContent bg-vlow rounded d-flex flex-column align-items-start justify-content-start ">
+              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">College Sep 2018 - August 2020<span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
               <!-- <hr class="hr-dark w-75 mx-3">  -->
-              <p class="text-dark px-3 lead"><b>ICT:</b> Distinction | <b>Business Studies:</b> B | <b>Mathematics:</b> C</p>
+              <p class="text-white px-3 lead"><b>ICT:</b> Distinction | <b>Business Studies:</b> B | <b>Mathematics:</b> C</p>
             </div>
           </div>
-          <button class="moreUpdates button mt-4 p-2 text-blueaccent bg-white w-25 mx-auto">More</button>
+          <button class="moreUpdates button mt-4 p-2 text-white bg-vlow w-25 mx-auto rounded">More</button>
         </div>
+      </div>
+    </section>
+    <section class="py-5" id='roadmap'>
+      <div class="container">
+        <h1 class="text-center text-white py-5">Roadmap</h1>
       </div>
     </section>
     <section class="py-5 bg-dark" id='contact'>
       <div class="container ">
         <h1 class="text-light text-center">Contact</h1>
-        <div class="list-group w-75 mx-auto py-3">
-          <div class="list-group-item text-dark"><span class="fw-bold px-lg-4 px-1 h5 user-select-none">Telephone:</span><p class="lead d-inline">07948190365</p></div>
-          <div class="list-group-item text-dark"><span class="fw-bold px-lg-4 px-1 h5 user-select-none">Email Address:</span><p class="lead d-inline">jakewhatling2002@gmail.com</p></div>
+        <div class="list-group w-50 mx-auto py-3">
+          <div class="list-group-item bg-vlow text-white"><span class="fw-bold px-lg-4 px-1 h5 user-select-none">Telephone:</span><p class="lead d-inline">07948190365</p></div>
+          <div class="list-group-item bg-vlow text-white"><span class="fw-bold px-lg-4 px-1 h5 user-select-none">Email Address:</span><p class="lead d-inline">jakewhatling2002@gmail.com</p></div>
         </div>
         <div class="d-flex flex-row justify-content-center align-items-center w-25 mx-auto">
           <a href="https://linkedin.com/in/jake-whatling/">
@@ -282,11 +345,6 @@
         </div>
       </div>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/index.js"></script>
+    
   </body>
 </html>

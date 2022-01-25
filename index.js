@@ -1,8 +1,7 @@
 const moreUpdatesBtn = document.querySelector('.moreUpdates')
 const updates = document.querySelectorAll('.update')
 const updateContainer = document.querySelector('.updateContainer')
-const updateConnector = document.createElement('div')
-updateConnector.classList.add('updateConnector')
+
 
 const checkExtended = (updates) =>{
     let returnVal
@@ -32,9 +31,3 @@ moreUpdatesBtn.addEventListener('click',(e)=>{
    extended === true ? e.target.textContent = 'Less' : e.target.textContent = 'More'
 })
 
-
-updates.forEach((el,i)=>{
-    // if(i == 0 |) {return}
-     el.querySelector('.updateDate').insertAdjacentElement('beforeend', updateConnector )
-     console.log(document.querySelectorAll('.updateConnector'))
-})

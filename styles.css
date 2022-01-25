@@ -7,6 +7,16 @@ h1 {
   font-size: 60px;
 }
 
+html::-webkit-scrollbar{
+  width: 15px;
+  background: #212529;
+}
+html::-webkit-scrollbar-track{
+background: #212529;
+}
+html::-webkit-slider-thumb{
+background: red;}
+
 .bg-peach {
   background: linear-gradient(170deg, #f2709c, #ff9472) !important;
 }
@@ -112,6 +122,7 @@ hr {
 }
 .bg-react {
   background: #61dafb;
+  text-shadow: 1px 1px 1px #424242df
 }
 
 .update{
@@ -124,15 +135,17 @@ hr {
 .updateDate{
   position: relative;
 }
-
-.updateConnector{
-  position: absolute;
-  display: block;
-  background:#39527f ;
-  width: 5px;
-  height: 120px;
-  top: 100%;
-  bottom: 0;
+.controlProjectCont{
+  transform: rotate(3deg);
+  top: -5%;
+  left: -15%;
+  overflow:hidden;
+}
+.controlProjectCont > * {
+  transform: rotate(-3deg)
+}
+.controlProjectCont > h1{
+  font-family: 'Oswald'
 }
 
 /*large screens*/
