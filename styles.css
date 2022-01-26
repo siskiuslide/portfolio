@@ -179,8 +179,17 @@ hr {
 .updateContent{
   position: relative;
   width: 100%;
-  margin-inline: 2%;
 }
+.moreUpdates{
+  border: none;
+  font-size: 1.25em
+}
+.moreUpdates:hover{
+  color: white;
+  background: #39527f
+
+}
+
 
 .controlProjectCont{
   transform: rotate(3deg);
@@ -245,13 +254,39 @@ hr {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .updateDate{
+    min-width: 170px;
+  }
+  .update{
+    min-width: 100% ;
+    width: 100% ;
+  }
+  .updateContent{
+  width: 96%;
+  margin-inline: 2%;
+
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+  .updateDate{
     min-width: 150px;
   }
   .update{
     min-width: 100% ;
     width: 100% ;
   }
-  
+  .update::before{
+    left: -5%;
+  }
+  .update::after{
+    display: none
+  }
+  .updateContent{
+  width: 96%;
+  margin-inline: 2%;
+
+  }
 }
 
 .parallax {
