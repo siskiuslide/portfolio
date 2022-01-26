@@ -38,8 +38,12 @@ background: red;}
 .bg-purple-low {
   background: #4b43e485;
 }
+.nav-link{
+  transition: transform 80ms
+}
 .nav-link:hover {
-  color: #6c63ff !important;
+  color: #39527f !important;
+  transform: scale(1.05);
 }
 
 .landing-title {
@@ -71,6 +75,17 @@ hr {
 }
 .bg-vlow {
   background: #ffffff0e;
+}
+.bg-low{
+ background: #ffffff70
+}
+.person-image{
+  aspect-ratio: 1;
+  border: 15px solid #39527f;
+}
+.aboutme-text{
+  text-align: justify;
+  text-shadow: 1px 1px 1px #424242df
 }
 .logo-container {
   transition: transform 50ms;
@@ -161,6 +176,11 @@ hr {
 .updateDate{
   position: relative;
 }
+.updateContent{
+  position: relative;
+  width: 100%;
+  margin-inline: 2%;
+}
 
 .controlProjectCont{
   transform: rotate(3deg);
@@ -232,4 +252,11 @@ hr {
     width: 100% ;
   }
   
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
 }

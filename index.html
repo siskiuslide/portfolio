@@ -37,6 +37,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"></button>
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav">
+            <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
             <li class="nav-item"><a href="#technologies" class="nav-link">Technologies</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="#updates" class="nav-link">Updates</a></li>
@@ -46,14 +47,15 @@
         </div>
       </div>
     </nav>
-    <section class="p-5 h-auto bg-image" style="background-image: url('./img/forest.png')">
-      <div class="container py-5">
-        <div class="d-block d-sm-flex flex-lg-row flex-sm-column py-5">
-          <h1 class="landing-title text-white w-75 py-5">
-            Welcome to <span class="bg-blueaccent px-lg-3">Jake Whatling's</span> corner of the internet
+    
+    <section class="p-2 h-auto bg-dark">
+      <div class="container py-2">
+        <div class="d-block d-sm-flex flex-lg-row flex-sm-column align-items-center py-2">
+          <h1 class="landing-title text-white w-100 pt-3 pb-1">
+           <span class="bg-blueaccent px-lg-3">Jake Whatling's</span> <p>corner of the internet</p>
           </h1>
-          <div class="bg-blueaccent w-auto rounded my-5 py-3 shadow-lg">
-            <h2 class="text-white px-lg-5 px-2 py-3 landing-title">
+          <div class="bg-blueaccent w-auto rounded my-2 py-2 shadow-lg">
+            <h2 class="text-white px-lg-5 px-2 py-1 landing-title">
               The
               <span class="text-white h1">Hub</span>
               for:
@@ -78,6 +80,17 @@
         </div>
       </div>
     </section>
+    <section class="pt-1 pb-3 position-relative">
+          <div class="d-flex flex-row justify-content-center bg-image parallax" style="background-image: url('./img/forest.png');">
+              <div class="d-flex flex-column justify-content-center align-items-center w-75 mb-3">
+                <img src="./img/dummy.png" alt="" class="person-image rounded-circle w-25 mt-5">
+                <h2 class="text-white bg-low m-3 px-5 py-2" style="text-shadow: 1px 1px 1px #424242df">Jake Whatling</h2>
+                <div class="d-flex flex-column bg-low mx-5 mb-3 w-100">
+                  <p class="aboutme-text text-white px-5 py-3 text-justify h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reprehenderit impedit ipsam inventore natus ex laborum! Quidem suscipit distinctio unde commodi nihil in, facilis quo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus deserunt iure aliquam eveniet nihil ipsa harum eos nam, blanditiis assumenda est ab neque quas earum at vero numquam laborum laudantium?</p>
+              </div>
+          </div>
+        </div>
+    </section>
     <section class="bg-dark" id='technologies'>
       <h1 class="text-light text-center bg-dark pt-2">Stack</h1>
       <div class="container py-5 d-flex flex-column">
@@ -92,7 +105,7 @@
                 <div class="text-dark  lead px-3 py-1 m-1 my-xs-3 h4 bg-js fw-bold">JS</div>
                 <div class="text-white lead px-3 py-1 m-1 my-xs-3 h4 bg-react fw-bolder">React</div>
               </div>
-              <hr class="my-4" />
+              <hr class="hr-lightblue my-4" />
               <div class="d-flex flex-column bg-vlow">
                 <p class="h4 fw-light text-white pt-3 px-2 lh-base">
                   Designing and styling <span class="bg-blueaccent px-2 fw-bolder">pleasing</span> UI features for web applications relies on strong <span class="bg-blueaccent px-2 fw-bolder">creativity</span> skills and precise attention to detail. My frontend skills include:
@@ -110,7 +123,7 @@
           </div>
           <img class="d-none d-lg-block backend-image align-self-start pt-5 mr-5 w-50" src="./img/createive.svg" alt="" />
         </div>
-        <hr>
+        <hr class="hr-lightblue">
         <div class="backend d-md-flex d-sm-flex align-items-sm-start py-5 text-white" id="backend">
           <img
             class="d-none d-lg-block backend-image align-self-start pt-5 mt-5 w-50"
@@ -128,7 +141,7 @@
                 <span class="text-white lead px-2 py-1 my-xs-3 my-sm-1 m-1 h4 bg-jwt fw-bolder">JWT</span>
                 <span class="text-white lead px-2 py-1 my-xs-3 my-sm-1 m-1 h4 bg-json fw-bolder">JSON</span>
               </div>
-              <hr class="my-4" />
+              <hr class="hr-lightblue my-4" />
               <div class="d-flex flex-column bg-vlow">
                 <p class="h4 fw-light pt-3 px-3">
                   Interested in building and
@@ -208,9 +221,9 @@
               <h5 class="fw-lighter h2 text-white px-2">2022</h5>
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1 ">Bootstrap<span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skill</span></h3>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1 ">Bootstrap<span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skill</span></h3>
               <hr class="hr-lightblue w-75 mx-3">
-              <p class="text-white px-3 lead">I began improving bootstrap knowledge so that I could build static sites more efficiently and consistently.</p>
+              <p class="text-white px-lg-3 lead">I began improving bootstrap knowledge so that I could build static sites more efficiently and consistently.</p>
             </div>
             
           </div>
@@ -220,9 +233,9 @@
               <h5 class="fw-lighter h2 text-white px-2">2022</h5>
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1 ">Control app - Users system <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1 ">Control app - Users system <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
               <hr class="hr-lightblue w-75 mx-3">
-              <p class="text-white px-3 lead">Once the basic functionality was implemented into the application I created new endpoints to handle user data and authentication. The application gained its first real user in January.</p>
+              <p class="text-white px-lg-3 lead">Once the basic functionality was implemented into the application I created new endpoints to handle user data and authentication. The application gained its first real user in January.</p>
             </div>
             
           </div>
@@ -234,9 +247,9 @@
 
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">Control app - Marketing page <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">Control app - Marketing page <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
               <hr class="hr-lightblue w-75 mx-3">
-              <p class="text-white px-3 lead">A frontend project to add to my collection to promote the Control app. </p>
+              <p class="text-white px-lg-3 lead">A frontend project to add to my collection to promote the Control app. </p>
               <a href="https://controlhe.netlify.app/" class="text-info px-3 lead"><p class="fw-bolder h5">View the site<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
@@ -248,8 +261,8 @@
 
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">MTA Networking Fundamentals <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <a href="https://www.credly.com/badges/a723b6a0-416a-414c-8600-45d73eb24871?source=linked_in_profile" class="text-info px-3 py-2 lead"><p class="fw-bolder h5">Verification<i class="bi-link px-1"></i></p></a>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">MTA Networking Fundamentals <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <a href="https://www.credly.com/badges/a723b6a0-416a-414c-8600-45d73eb24871?source=linked_in_profile" class="text-info px-lg-3 py-2 lead"><p class="fw-bolder h5">Verification<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
           <div class="update py-3 d-flex flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
@@ -260,9 +273,9 @@
 
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">Control app - Development begins <span class="bg-success text-white h5 fw-lighter rounded px-2 mx-2">Project</span></h3>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">Control app - Development begins <span class="bg-success text-white h5 fw-lighter rounded px-2 mx-2">Project</span></h3>
               <hr class="hr-lightblue w-75 mx-3">
-              <p class="text-white px-3 lead">After discovering the qualities of Hubitat Elevation networks, I finally began writing a web application to host locally which would control devices connected to the hub.</p>
+              <p class="text-white px-lg-3 lead">After discovering the qualities of Hubitat Elevation networks, I finally began writing a web application to host locally which would control devices connected to the hub.</p>
             </div>
           </div>
           <div class="update py-3 d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
@@ -273,8 +286,8 @@
 
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Coding & Logic <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <a href="https://www.credly.com/badges/2ec2bd23-36a1-4ad5-8d25-1666b45132c4?source=linked_in_profile" class="text-info px-3 lead"><p class="fw-bolder h5">Verification<i class="bi-link px-1"></i></p></a>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Coding & Logic <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <a href="https://www.credly.com/badges/2ec2bd23-36a1-4ad5-8d25-1666b45132c4?source=linked_in_profile" class="text-info px-lg-3 lead"><p class="fw-bolder h5">Verification<i class="bi-link px-1"></i></p></a>
             </div>
           </div>
           <div class="update py-3 d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
@@ -285,8 +298,8 @@
 
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Cloud Services <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
-              <a href="https://www.credly.com/badges/5a0aed49-d4d9-455c-94e8-7d1c42f8988f?source=linked_in_profile" class="text-info px-3 lead"><p class="fw-bolder h5" >Verification<i class="bi-link px-1"></i></p></a>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">City & Guilds L3 Cloud Services <span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <a href="https://www.credly.com/badges/5a0aed49-d4d9-455c-94e8-7d1c42f8988f?source=linked_in_profile" class="text-info px-lg-3 lead"><p class="fw-bolder h5" >Verification<i class="bi-link px-1"></i></p></a>
               </p>
             </div>
           </div>
@@ -298,9 +311,9 @@
 
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">Started Web Development <span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skills</span></h3>
-              <hr class="hr-lightblue w-75 mx-3"> 
-              <p class="text-white px-3 lead">I pursued the journey of learning Web Development, beginning with HTML/CSS and progressing with JavaScript.</p>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">Started Web Development <span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skills</span></h3>
+              <hr class="hr-lightblue w-75 mx-2"> 
+              <p class="text-white px-lg-3 lead">I pursued the journey of learning Web Development, beginning with HTML/CSS and progressing with JavaScript.</p>
             </div>
           </div>
           <div class="update py-3 d-none flex-lg-row flex-column shadow-lg rounded mx-auto my-3 bg-vlow ">
@@ -310,9 +323,9 @@
               <h5 class="fw-lighter h2 text-white mx-2 px-3">2020</h5>
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-items-start justify-content-start ">
-              <h3 class="text-white px-3 py-sm-3 py-md-2 py-lg-1">College Sep 2018 - August 2020<span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
+              <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">College Sep 2018 - August 2020<span class="bg-info text-white h5 fw-light rounded px-2 mx-2">Qualification</span></h3>
               <!-- <hr class="hr-lightblue w-75 mx-3">  -->
-              <p class="text-white px-3 lead"><b>ICT:</b> Distinction | <b>Business Studies:</b> B | <b>Mathematics:</b> C</p>
+              <p class="text-white px-lg-3 lead"><b>ICT:</b> Distinction | <b>Business Studies:</b> B | <b>Mathematics:</b> C</p>
             </div>
           </div>
           <button class="moreUpdates button mt-4 p-2 text-white bg-vlow w-25 mx-auto rounded">More</button>
