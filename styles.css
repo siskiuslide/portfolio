@@ -63,8 +63,9 @@ html::-webkit-slider-thumb {
   width: 40% !important;
 }
 hr {
-  color: #44883e;
-  border: solid 2px #44883e;
+  color: #95bb83;
+  border: solid 2px #95bb83;
+  opacity: 0.5
 }
 .hr-blue {
   color: #3f3d56 !important;
@@ -206,29 +207,54 @@ hr {
   grid-template-areas:
     "a a a a b"
     "c c d d b"
-    "c c d d b";
+    "c c d d b"
+    "e e e e b";
+    
   gap: 1em;
 }
 .project-child {
 }
 .project-item-a {
   grid-area: a;
-  pointer-events: none;
+  background: #3f3d56;
 }
 .project-item-a > h1 {
   transform: translateY(0px) !important;
 }
+.project-item-a > .project-overlay {
+  opacity: 0.1
+}
+.project-item-a:hover > .project-overlay{
+  background: #3f3d56;
+  opacity: 1;
+}
+.project-item-a{
+  /* background: #95bb83 */
+}
 .project-item-b {
   grid-area: b;
+}
+.project-item-b > .project-overlay{
+  background: #39527f;
 }
 .project-item-c {
   grid-area: c;
 }
+.project-item-c > .project-overlay{
+  background: #39527f
+}
 .project-item-d {
   grid-area: d;
 }
+.project-item-d > .project-overlay{
+  background: #95bb83
+}
 .project-item-e {
   grid-area: e;
+}
+.project-item-e > .project-overlay{
+  background: #4675cc;
+  opacity: 0.5
 }
 .project-content {
   top: -100%;
@@ -261,8 +287,8 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgb(255, 0, 0);
-  opacity: 0.1;
+  /* background: #39527f; */
+  opacity: 0.3;
   width: 100%;
   height: 100%;
   transition: all 200ms;

@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
     <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -91,10 +93,10 @@
           <div class="bg-vlow my-3">
             <p class="aboutme-text text-white px-3 py-4 mx-2 text-justify h5" style="text-shadow: 2px 2px 2px #424242">I'm Jake Whatling. A self-taught full stack web developer with a preference of frontend development. I've committed many hours of my free time to strengthening my understanding and learning new skills.</p>
             <p class="aboutme-text text-white px-3 py-2 mx-2 text-justify h5" style="text-shadow: 2px 2px 2px #424242">Interests outside of tech:</p>
-            <ul class="list-unstyled text-white mx-5 lead">
-              <li></li>Photography</li>
-              <li></li>Hiking</li>
-              <li></li>Japanese motoring (90's & 00's)</li>
+            <ul class="list-unstyled text-white mx-4 lead">
+              <li class="d-flex flex-row justify-content-start align-items-center"><i class="bi-camera-fill m-1 px-1 position-relative" style="top: -4%;"></i>Photography</li>
+              <li class="d-flex flex-row justify-content-start align-items-center"><i class="material-icons m-1 px-1">hiking</i>Hiking</li>
+              <li class="d-flex flex-row justify-content-start align-items-center"><i class="material-icons m-1 px-1">drive_eta</i>Japanese motoring (90's & 00's)</li>
             </ul>
           </div>
         </div>
@@ -130,13 +132,13 @@
             </div>
             <div class="logo-container d-none d-lg-flex flex-row position-relative"></div>
           </div>
-          <img class="d-none d-lg-block backend-image align-self-start pt-5 mr-5 w-50" src="./img/createive.svg" alt="" />
+          <img class="d-none d-lg-block backend-image align-self-start pt-5 mr-5 w-50" src="./img/creative.svg" alt="" />
         </div>
         <hr class="hr-lightblue">
         <div class="backend d-md-flex d-sm-flex align-items-sm-start py-5 text-white" id="backend">
           <img
             class="d-none d-lg-block backend-image align-self-start pt-5 mt-5 w-50"
-            src="./img/server-cluster-light.svg"
+            src="./img/server-cluster.svg"
             alt=""
           />
           <div class="d-flex flex-column mx-5">
@@ -196,33 +198,40 @@
     </section>
     <section class="py-5 mx-xl-5 bg-dark" id='projects'>
       <div class="project-container my-5 mx-2">
-        <div class="project-child project-item-a bg-vlow d-flex">
-          <div class="project-content d-flex flex-row justify-content-center align-items-center">
+        <div class="project-child project-item-a">
+          <div class="project-overlay position-relative"> </div>
+          <div class="project-content d-flex flex-column justify-content-center align-items-center position-relative">
             <h1 class="text-white p-5 rounded">Projects</h1>          
           </div>
         </div>
-        <div class="project-child project-item-b bg-vlow">
+        <div class="project-child project-item-b">
           <div class="project-overlay position-relative"></div>
           <div class="project-content d-flex flex-column justify-content-center align-items-center position-relative">
-            <h1 class="text-white px-5 rounded">Test</h1>
+            <h1 class="text-white px-5 rounded">In Progress</h1>
             <p class="text-white lead px-5 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos quia explicabo possimus nihil excepturi?</p>
           </div>
         </div>
-        <div class="project-child project-item-c bg-vlow">
+        <div class="project-child project-item-c">
           <div class="project-overlay position-relative"></div>
           <div class="project-content d-flex flex-column justify-content-center align-items-center position-relative">
-            <h1 class="text-white px-5 rounded">Test</h1>
+            <h1 class="text-white px-5 rounded control-app-heading">Control</h1>
             <p class="text-white lead px-5 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos quia explicabo possimus nihil excepturi?</p>
           </div>
         </div>
-        <div class="project-child project-item-d bg-vlow">
+        <div class="project-child project-item-d">
           <div class="project-overlay position-relative"></div>
           <div class="project-content d-flex flex-column justify-content-center align-items-center position-relative">
-            <h1 class="text-white px-5 rounded">Test</h1>
+            <h1 class="text-white px-5 rounded">In Progress</h1>
             <p class="text-white lead px-5 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos quia explicabo possimus nihil excepturi?</p>
           </div>
         </div>
-        
+        <div class="project-child project-item-e">
+          <div class="project-overlay position-relative"></div>
+          <div class="project-content d-flex flex-column justify-content-center align-items-center position-relative">
+            <h1 class="text-white px-5 rounded">In Progress</h1>
+            <p class="text-white lead px-5 py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos quia explicabo possimus nihil excepturi?</p>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -238,7 +247,7 @@
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
               <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1 ">Bootstrap<span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skill</span></h3>
-              <hr class="hr-lightblue w-75 mx-3">
+              <hr class="w-75 mx-3">
               <p class="text-white px-lg-3 lead">I began improving bootstrap knowledge so that I could build static sites more efficiently and consistently.</p>
             </div>
             
@@ -250,7 +259,7 @@
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
               <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1 ">Control app - Users system <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
-              <hr class="hr-lightblue w-75 mx-3">
+              <hr class="w-75 mx-3">
               <p class="text-white px-lg-3 lead">Once the basic functionality was implemented into the application I created new endpoints to handle user logins and authentication. The application gained its first real user in January.</p>
             </div>
             
@@ -264,7 +273,7 @@
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
               <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">Control app - Marketing page <span class="bg-success text-white h5 fw-light rounded px-2 mx-2">Project</span></h3>
-              <hr class="hr-lightblue w-75 mx-3">
+              <hr class="w-75 mx-3">
               <p class="text-white px-lg-3 lead">A frontend project to add to my collection to promote the Control app. </p>
               <a href="https://controlhe.netlify.app/" class="text-info px-3 lead"><p class="fw-bolder h5">View the site<i class="bi-link px-1"></i></p></a>
             </div>
@@ -290,7 +299,7 @@
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
               <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">Control app - Development begins <span class="bg-success text-white h5 fw-lighter rounded px-2 mx-2">Project</span></h3>
-              <hr class="hr-lightblue w-75 mx-3">
+              <hr class="w-75 mx-3">
               <p class="text-white px-lg-3 lead">After discovering the qualities of Hubitat Elevation networks, I finally began writing a web application to host locally which would control devices connected to the hub.</p>
             </div>
           </div>
@@ -328,7 +337,7 @@
             </div>
             <div class="updateContent bg-vlow rounded d-flex flex-column align-self-start justify-content-start ">
               <h3 class="text-white px-lg-3 py-sm-3 py-md-2 py-lg-1">Started Web Development <span class="bg-warning text-white h5 fw-light rounded px-2 mx-2">Skills</span></h3>
-              <hr class="hr-lightblue w-75 mx-2"> 
+              <hr class="w-75 mx-2"> 
               <p class="text-white px-lg-3 lead">I pursued the journey of learning Web Development, beginning with HTML/CSS and progressing with JavaScript.</p>
             </div>
           </div>
