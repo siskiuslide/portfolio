@@ -200,17 +200,16 @@ hr {
   left: -15%;
   overflow: hidden;
 }
-.project-container {
+
+.project-container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "a a a a b"
-    "c c d d b"
-    "c c d d b"
-    "e e e e b";
-    
   gap: 1em;
+  grid-template-areas: 
+  'a a a'
+  'b b b'
+  'c c c'
+  'd d d'
+  'e e e';
 }
 .project-child {
 }
@@ -332,6 +331,19 @@ hr {
   .update {
     width: 60%;
   }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "a a a a b"
+      "c c d d b"
+      "c c d d b"
+      "e e e e b";
+      
+    gap: 1em;
+  }
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -342,6 +354,17 @@ hr {
     min-width: 100%;
     width: 100%;
   }
+  .project-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: 
+      'a a a a'
+      'c c d d'
+      'c c d d'
+      'b b b b'
+      'e e e e';
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -376,6 +399,7 @@ hr {
     width: 96%;
     margin-inline: 2%;
   }
+ 
 }
 
 .parallax {
